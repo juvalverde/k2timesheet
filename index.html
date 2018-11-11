@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Timesheets</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles/salesforce-lightning-design-system.css">
+	</head>
+	<body>
+		<div class="timesheet slds-p-around_large">
+			
+			<div class="timesheet__table">
+
+				<div class="timesheet__header slds-border_bottom">
+
+					<div class="slds-clearfix">
+						<div class="slds-clearfix">
+							<div class="slds-float_left slds-p-around_small">
+								<p class="slds-text-heading_large">Current timesheets</p>
+							</div>
+							<div class="slds-float_right slds-p-around_medium">
+								Tell us you did not work
+								<button class="slds-button slds-button_brand slds-m-left_small">Create a timesheet</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="timesheet__body">
+
+					<div class="timesheet__titles slds-grid slds-gutters slds-p-around_medium">
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Status</span>
+						</div>
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Number</span>
+						</div>
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Timesheet period</span>
+						</div>
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Worked hours</span>
+						</div>
+
+						<div class="slds-col slds-size_2-of-6">
+							<span>Client</span>
+						</div>
+					</div>
+
+					<div class="slds-text-color_error slds-p-left_medium slds-p-bottom_x-small">Your timesheet has been rejected. Please edit it.</div>
+
+					<div class="timesheet__boxes">
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-error">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Rejected</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+												<div class="slds-float_left">
+													<button class="slds-button slds-button_outline-brand">Upload documents</button>
+												</div>
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-saved">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Saved</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+												<div class="slds-float_left">
+													<button class="slds-button slds-button_outline-brand">Upload documents</button>
+												</div>
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-submit">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Saved</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+												<div class="slds-float_left">
+													<button class="slds-button slds-button_outline-brand">Upload documents</button>
+												</div>
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+
+				</div>
+
+			</div>
+
+			
+
+			<div class="timesheet__table">
+
+				<div class="timesheet__header slds-border_bottom">
+
+					<div class="slds-clearfix">
+						<div class="slds-clearfix">
+							<div class="slds-float_left slds-p-around_small">
+								<p class="slds-text-heading_large">Current timesheets</p>
+							</div>
+							<div class="slds-float_right slds-p-around_medium">
+								Tell us you did not work
+								<button class="slds-button slds-button_brand slds-m-left_small">Create a timesheet</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="timesheet__body">
+
+					<div class="timesheet__titles slds-grid slds-gutters slds-p-around_medium">
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Status</span>
+						</div>
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Number</span>
+						</div>
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Timesheet period</span>
+						</div>
+
+						<div class="slds-col slds-size_1-of-6">
+							<span>Worked hours</span>
+						</div>
+
+						<div class="slds-col slds-size_2-of-6">
+							<span>Client</span>
+						</div>
+					</div>
+
+
+					<div class="timesheet__boxes">
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-printed">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Printed</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-printed">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Printed</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-printed">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Printed</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+
+						<div class="slds-box slds-m-bottom_small box_default box_default-printed">
+
+							<div class="slds-grid slds-gutters">
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-status">Printed</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-number">TS-055730</span>
+								</div>
+
+								<div class="slds-col slds-size_1-of-6 box-dates">
+									<span>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+
+										<div class="box-date">
+											<div class="box-day">28</div>
+	
+											<div class="box-month">
+												<p>may</p>
+												<p>2018</p>
+											</div>
+										</div>
+									
+									</span>
+
+								</div>
+
+								<div class="slds-col slds-size_1-of-6">
+									<span class="box-whours">
+										<img src="assets/icons/clock.png" width="20px">
+										<p>167:00</p>
+									</span>
+								</div>
+
+								<div class="slds-col slds-size_2-of-6">
+
+									<span class="box-documents">
+
+										<div class="slds-clearfix">
+											<div class="slds-clearfix">
+
+												<div class="slds-float_right">
+													<img src="assets/icons/doc.png" width="30px">
+													<p>Client documents</p>
+												</div>
+											</div>
+										</div>
+					
+									</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+
+	</body>
+</html>

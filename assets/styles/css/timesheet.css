@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.timesheet {
+  font-size: 0.9rem;
+}
+.timesheet .timesheet__body .timesheet__titles {
+  font-weight: bold;
+  color: #585858;
+}
+.timesheet .timesheet__body .timesheet__boxes span {
+  color: #585858;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-status {
+  color: #585858;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates {
+  position: relative;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date .box-day,
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date .box-month {
+  display: table;
+  vertical-align: middle;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date .box-day {
+  display: table-cell;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date .box-month {
+  display: table-cell;
+  text-transform: uppercase;
+  padding: 4px 0px 0px 4px;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date .box-month p:first-child {
+  font-size: 0.9rem;
+  line-height: 9px;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date .box-month p:last-child {
+  font-size: 0.8rem;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-dates .box-date:last-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-whours {
+  display: table;
+  vertical-align: middle;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-whours img,
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-whours p {
+  display: table-cell;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-whours p {
+  display: table-cell;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  padding-left: 8px;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default .box-documents {
+  display: table-cell;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default-error {
+  background-color: #fff0f2;
+  border-color: #efdcde;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default-error .box-status {
+  color: #d0021b;
+  text-transform: uppercase;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default-saved .box-status {
+  color: #1c86d8;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default-submit .box-status {
+  color: #585858;
+}
+.timesheet .timesheet__body .timesheet__boxes .box_default-printed .box-status {
+  color: #417505;
+}

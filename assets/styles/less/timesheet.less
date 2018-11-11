@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.timesheet {
+	// background-color: ivory;
+	font-size: 0.9rem;
+
+	// div, p {
+		// color:#585858;
+	// }
+
+	.timesheet__body {
+
+		.timesheet__titles {
+			font-weight: bold;
+			color:#585858;
+		}
+
+		.timesheet__boxes {
+
+			span {
+				color: #585858;
+			}
+
+			.box_default {
+
+				.box-status {
+					color:#585858;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				.box-number {
+					// background-color: pink;
+				}
+
+				.box-dates {
+
+					position: relative;
+
+					.box-date {
+
+						.box-day, .box-month {
+						display: table;
+						vertical-align: middle;
+						}
+
+					.box-day {
+						display: table-cell;
+						font-weight: lighter;
+						font-size: 1.5rem;
+						}
+					.box-month {
+						display: table-cell;
+						text-transform: uppercase;
+						padding: 4px 0px 0px 4px;
+						p:first-child { 
+							font-size: 0.9rem;
+							line-height: 9px;
+							}
+						p:last-child {
+							font-size: 0.8rem;
+							}
+						}
+
+					}
+
+					.box-date:last-child {
+						position: absolute;
+						right: 0;
+						top:0;
+					}
+
+				}
+
+				.box-whours {
+					display: table;
+					vertical-align: middle;
+
+					img, p {
+						display: table-cell;
+					}
+
+					p {
+						display: table-cell;
+					    font-weight: lighter;
+					    font-size: 1.5rem;
+					    padding-left: 8px;
+					}
+				}
+
+				.box-documents {
+					display: table-cell;
+				}
+			}
+
+			.box_default-error {
+				background-color: #fff0f2;
+				border-color: #efdcde;
+
+				.box-status {
+					color: #d0021b;
+					text-transform: uppercase;
+				}
+			}
+
+			.box_default-saved {
+
+				.box-status {
+					color: #1c86d8;
+				}
+			}
+
+			.box_default-submit {
+
+				.box-status {
+					color: #585858;
+				}
+
+			}
+
+			.box_default-printed {
+
+				.box-status {
+					color: #417505;
+				}
+
+			}
+		}
+	}
+}
