@@ -58,9 +58,6 @@
   font-size: 1.5rem;
   padding-left: 8px;
 }
-.timesheet .timesheet__body .timesheet__boxes .box_default .box-documents {
-  display: table-cell;
-}
 .timesheet .timesheet__body .timesheet__boxes .box_default-error {
   background-color: #fff0f2;
   border-color: #efdcde;
